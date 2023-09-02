@@ -1,11 +1,12 @@
-#1D Penalised Regression ---------------------------------------------------
-# Libraries
+# Load libraries
 library(tidyverse) # ggplot(.)
 install.packages("glmnet")
 library(glmnet) # for regularised regression
 
 # Read dataset
 horns <- read.csv("HornsRev.csv")
+
+#1D Penalised Regression ---------------------------------------------------
 
 # Set Impact as factor
 horns$Impact <- as.factor(df$Impact)
